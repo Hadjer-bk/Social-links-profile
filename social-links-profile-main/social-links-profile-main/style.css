@@ -1,0 +1,59 @@
+:root{
+--color_text: hsl(0, 0%, 100%);
+--color_background:  hsl(0, 0%, 8%);
+--color_port:hsl(0, 0%, 12%);
+--color_btn:hsl(0, 0%, 20%);
+--color_btn_hover:hsl(75, 94%, 57%);
+}
+@font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+body{
+    background-color: var(--color_background);
+    color: var(--color_text);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: inter;
+
+}
+.container{
+background-color: var(--color_port);
+height: 100%;
+margin: auto;
+padding: 25px;
+border-radius: 15px;
+}
+.container .profile{
+    text-align: center;
+}
+
+.container .profile img{
+border-radius: 50%;
+width: 30%;
+}
+.container .profile .info h3{
+    font-size: 25px;
+}
+.container .profile .info .bio{
+    padding: 10px;
+    color: var(--color_btn_hover);
+}
+.container .btn{
+    display:grid;
+}
+.container button{
+    background-color: var(--color_btn);
+    color: var(--color_text);
+    margin: 10px;
+    padding: 15px ;
+    border-radius: 10px;
+    border: none;
+    font-family: inter;
+}
+.container button:hover{
+    background-color: var(--color_btn_hover);
+    cursor: pointer;
+}
